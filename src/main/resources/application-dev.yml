@@ -1,0 +1,19 @@
+server:
+  port: 8070
+  servlet:
+    context-path: /
+
+spring:
+  application:
+    name: eureka_server
+  main:
+    allow-bean-definition-overriding: true
+
+eureka:
+  instance:
+    hostname: localhost
+
+  # Disable client registration (since this is the server)
+  client:
+    register-with-eureka: false
+    fetch-registry: false
